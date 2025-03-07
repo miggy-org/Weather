@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>InitAllData</servlet-name>
+		<servlet-class>com.jordan.airportweather.InitAllDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitAllData</servlet-name>
+		<url-pattern>/admin/initdata</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ChangeConfig</servlet-name>
+		<servlet-class>com.jordan.airportweather.ChangeConfigServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangeConfig</servlet-name>
+		<url-pattern>/admin/config</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>UpdateAirport</servlet-name>
+		<servlet-class>com.jordan.airportweather.UpdateAirportServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateAirport</servlet-name>
+		<url-pattern>/admin/update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UpdateAll</servlet-name>
+		<servlet-class>com.jordan.airportweather.UpdateAllServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateAll</servlet-name>
+		<url-pattern>/admin/updateall</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>PurgeOldData</servlet-name>
+		<servlet-class>com.jordan.airportweather.PurgeDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PurgeOldData</servlet-name>
+		<url-pattern>/admin/purgedata</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetAirportList</servlet-name>
+		<servlet-class>com.jordan.airportweather.GetAirportListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetAirportList</servlet-name>
+		<url-pattern>/client/getairportlist</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetAirportMonthList</servlet-name>
+		<servlet-class>com.jordan.airportweather.GetAirportMonthListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetAirportMonthList</servlet-name>
+		<url-pattern>/client/getairportmonthlist</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetAirportMonthData</servlet-name>
+		<servlet-class>com.jordan.airportweather.GetAirportMonthDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetAirportMonthData</servlet-name>
+		<url-pattern>/client/getairportmonthdata</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DataStoreInfo</servlet-name>
+		<servlet-class>com.jordan.airportweather.DataStoreInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DataStoreInfo</servlet-name>
+		<url-pattern>/status</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<security-constraint>
+	    <web-resource-collection>
+    	    <web-resource-name>admin</web-resource-name>
+        	<url-pattern>/admin/*</url-pattern>
+	    </web-resource-collection>
+    	<auth-constraint>
+        	<role-name>admin</role-name>
+	    </auth-constraint>
+	</security-constraint>
+	
+</web-app>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Airport Weather</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="id">ID</string>
+    <string name="city">City</string>
+    <string name="tz">TZ</string>
+    <string name="title_activity_show_airport">Airport Details</string>
+    <string name="title_section_details">details</string>
+    <string name="title_section_map">map</string>
+    <string name="title_section_weather">weather</string>
+    <string name="airport_diagram">airport diagram</string>
+    <string name="select_month">Select month:</string>
+    <string name="select_time_of_day">Select time:</string>
+    <string name="go">Go</string>
+    <string name="title_activity_show_weather">Weather Details</string>
+    <string name="title_graph_winds">Winds</string>
+    <string name="title_graph_visibility">Visibility</string>
+    <string name="title_graph_clouds">Clouds</string>
+    <string name="title_graph_temperature">Temperature</string>
+    <string name="title_graph_dewpoint">Dew Point</string>
+    <string name="title_graph_altimeter">Altimeter</string>
+    <string name="airport_name">Airport Name</string>
+    <string name="airport_city">Airport City</string>
+    <string name="morning">Morning</string>
+    <string name="noon">Noon</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+
+</resources>

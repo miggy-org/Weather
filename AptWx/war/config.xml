@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg
+    updateUrl="http://www.aviationweather.gov/adds/metars/index.php?station_ids=%1&amp;std_trans=standard&amp;chk_metars=on&amp;hoursStr=most+recent+only&amp;submitmet=Submit"
+    startHour="8" stopHour="20" updateFreq="4" singlePing="1" purgeDays="1461" >
+	<airports>
+
+	    <airport id="KDCA" name="Ronald Reagan Washington National Airport" city="Washington, DC" tzOffset="5" coords="38.8519163,-77.0376989" />
+	    <airport id="KATL" name="Hartsfield-Jackson Atlanta International Airport" city="Atlanta, GA" tzOffset="5" coords="33.6366995,-84.4278639" />
+	    <airport id="KJFK" name="John F. Kennedy International Airport" city="New York, NY" tzOffset="5" coords="40.6397511,-73.7789256" />
+	    <airport id="KLGA" name="La Guardia Airport" city="New York, NY" tzOffset="5" coords="40.7772500,-73.8726111" />
+	    <airport id="KEWR" name="Newark Liberty International Airport" city="Newark, NJ" tzOffset="5" coords="40.6925000,-74.1686667" />
+	    <airport id="KDTW" name="Detroit Metropolitan Wayne County Airport" city="Detroit, MI" tzOffset="5" coords="42.2124167,-83.3533889" />
+	    <airport id="KMCO" name="Orlando International Airport" city="Orlando, FL" tzOffset="5" coords="28.4293889,-81.3090000" />
+	    <airport id="KMIA" name="Miami International Airport" city="Miami, FL" tzOffset="5" coords="25.7953611,-80.2901111" />
+	    <airport id="KPHL" name="Philadelphia International Airport" city="Philadelphia, PA" tzOffset="5" coords="39.8722494,-75.2408658" />
+	    <airport id="KIAD" name="Washington Dulles International Airport" city="Washington, DC" tzOffset="5" coords="38.9474444,-77.4599444" />
+	    <airport id="KBOS" name="Logan International Airport" city="Boston, MA" tzOffset="5" coords="42.3629722,-71.0064167" />
+	    <airport id="KCLT" name="Charlotte Douglas International Airport" city="Charlotte, NC" tzOffset="5" coords="35.2137407,-80.9490690" />
+	    <airport id="KCLE" name="Cleveland-Hopkins International Airport" city="Cleveland, OH" tzOffset="5" coords="41.4094167,-81.8546944" />
+
+	    <airport id="KMDW" name="Chicago Midway International Airport" city="Chicago, IL" tzOffset="6" coords="41.7859722,-87.7524167" />
+	    <airport id="KORD" name="Chicago O'Hare International Airport" city="Chicago, IL" tzOffset="6" coords="41.9793333,-87.9073889" />
+	    <airport id="KDFW" name="Dallas Fort Worth International Airport" city="Dallas-Fort Worth, TX" tzOffset="6" coords="32.8968281,-97.0379958" />
+	    <airport id="KIAH" name="George Bush Intercontinental Houston Airport" city="Houston, TX" tzOffset="6" coords="29.9844444,-95.3414444" />
+	    <airport id="KMSP" name="Minneapolis-St. Paul International Airport" city="Minneapolis, MN" tzOffset="6" coords="44.8819722,-93.2217778" />
+	    <airport id="KMEM" name="Memphis International Airport" city="Memphis, TN" tzOffset="6" coords="35.0424167,-89.9766667" />
+	    <airport id="KSTL" name="Lambert-St. Louis International Airport" city="St. Louis, MO" tzOffset="6" coords="38.7486972,-90.3700289" />
+	    <airport id="KMCI" name="Kansas City International Airport" city="Kansas City, MO" tzOffset="6" coords="39.2976053,-94.7139056" />
+	    <airport id="KOMA" name="Eppley Airfield" city="Omaha, NE" tzOffset="6" coords="41.3031667,-95.8940556" />
+	    <airport id="KMKE" name="General Mitchell International Airport" city="Milwaukee, WI" tzOffset="6" coords="42.9469307,-87.8970684" />
+
+	    <airport id="KDEN" name="Denver International Airport" city="Denver, CO" tzOffset="7" coords="39.8616667,-104.6731667" />
+	    <airport id="KPHX" name="Phoenix Sky Harbor International Airport" city="Phoenix, AZ" tzOffset="7" coords="33.4342778,-112.0115833" />
+	    <airport id="KSLC" name="Salt Lake City International Airport" city="Salt Lake City, UT" tzOffset="7" coords="40.7883878,-111.9777731" />
+	    <airport id="KBOI" name="Boise Airport" city="Boise, ID" tzOffset="7" coords="43.5643611,-116.2228611" />
+	    <airport id="KTUS" name="Tucson International Airport" city="Tucson, AZ" tzOffset="7" coords="32.1160833,-110.9410278" />
+	    <airport id="KJAC" name="Jackson Hole Airport" city="Jackson, WY" tzOffset="7" coords="43.6073333,-110.7377500" />
+	    <airport id="KABQ" name="Albuquerque International Sunport" city="Albuquerque, NM" tzOffset="7" coords="35.0401944,-106.6091944" />
+
+	    <airport id="KRHV" name="Reid-Hillview Airport" city="San Jose, CA" tzOffset="8" coords="37.3328611,-121.8198056" />
+	    <airport id="KPAO" name="Palo Alto Airport" city="Palo Alto, CA" tzOffset="8" coords="37.4611111,-122.1150556" />
+	    <airport id="KSQL" name="San Carlos Airport" city="San Carlos, CA" tzOffset="8" coords="37.5118550,-122.2495236" />
+	    <airport id="KSJC" name="San Jose International Airport" city="San Jose, CA" tzOffset="8" coords="37.3626667,-121.9291111" />
+	    <airport id="KSEA" name="Seattle International Airport" city="Seattle, WA" tzOffset="8" coords="47.4498889,-122.3117778" />
+	    <airport id="KPAE" name="Snohomish County Airport (Paine Field)" city="Everett, WA" tzOffset="8" coords="47.9070000,-122.2815833" />
+	    <airport id="KBFI" name="Boeing Field" city="Seattle, WA" tzOffset="8" coords="47.5300000,-122.3019722" />
+	    <airport id="KMRY" name="Monterey Peninsula Airport" city="Monterey, CA" tzOffset="8" coords="36.5870000,-121.8429444" />
+	    <airport id="KHAF" name="Half Moon Bay Airport" city="Half Moon Bay, CA" tzOffset="8" coords="37.5134444,-122.5011667" />
+	    <airport id="KSAC" name="Sacramento Executive Airport" city="Sacramento, CA" tzOffset="8" coords="38.5125278,-121.4934722" />
+	    <airport id="KOAK" name="Oakland International Airport" city="Oakland, CA" tzOffset="8" coords="37.7213056,-122.2207222" />
+	    <airport id="KSFO" name="San Francisco International Airport" city="San Francisco, CA" tzOffset="8" coords="37.6191050,-122.3752372" />
+	    <airport id="KLAX" name="Los Angeles International Airport" city="Los Angeles, CA" tzOffset="8" coords="33.9424955,-118.4080684" />
+	    <airport id="KBUR" name="Bob Hope Airport" city="Burbank, CA" tzOffset="8" coords="34.2006944,-118.3586667" />
+	    <airport id="KLAS" name="Las Vegas McCarran International Airport" city="Las Vegas, NV" tzOffset="8" coords="36.0800556,-115.1522500" />
+	    <airport id="KPDX" name="Portland International Airport" city="Portland, OR" tzOffset="8" coords="45.5887089,-122.5968694" />
+	    <airport id="KGEG" name="Spokane International Airport" city="Spokane, WA" tzOffset="8" coords="47.6190278,-117.5352222" />
+	    <airport id="KSAN" name="San Diego International Airport" city="San Diego, CA" tzOffset="8" coords="32.7335556,-117.1896667" />
+
+	    <airport id="PANC" name="Anchorage International Airport" city="Anchorage, AK" tzOffset="9" coords="61.1740833,-149.9981944" />
+
+	    <airport id="PHNL" name="Honolulu International Airport" city="Honolulu, HI" tzOffset="10" coords="21.3186813,-157.9224287" />
+
+	</airports>
+</cfg>

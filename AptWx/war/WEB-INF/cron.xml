@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/admin/updateall</url>
+    <description>Updates weather conditions for all tracked airports</description>
+    <schedule>every 1 hours from 12:05 to 06:05</schedule>
+  </cron>
+  <cron>
+    <url>/admin/purgedata</url>
+    <description>Purges the datastore of old data</description>
+    <schedule>every sunday 10:05</schedule>
+  </cron>
+</cronentries>

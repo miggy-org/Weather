@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jordan.raven.ShowWeatherActivity" >
+
+    <item
+        android:id="@+id/action_morning"
+        android:orderInCategory="100"
+        android:title="@string/morning"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_noon"
+        android:orderInCategory="100"
+        android:title="@string/noon"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_afternoon"
+        android:orderInCategory="100"
+        android:title="@string/afternoon"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_evening"
+        android:orderInCategory="100"
+        android:title="@string/evening"
+        app:showAsAction="never" />
+
+</menu>

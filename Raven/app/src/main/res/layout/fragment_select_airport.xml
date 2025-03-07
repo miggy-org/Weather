@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+	android:background="@drawable/main"
+    tools:context="com.jordan.raven2.SelectAirportActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+	    <TextView android:id="@+id/idHeader"
+		    android:layout_width="0dp"
+		    android:layout_weight="2"
+		    android:layout_height="match_parent"
+		    android:paddingLeft="4dp"
+		    android:paddingTop="8dp"
+		    android:paddingBottom="8dp"
+		    android:textStyle="bold"
+		    android:text="@string/id"
+	        />
+	    <TextView android:id="@+id/cityHeader"
+		    android:layout_width="0dp"
+		    android:layout_weight="6"
+		    android:layout_height="match_parent"
+		    android:paddingLeft="4dp"
+		    android:paddingTop="8dp"
+		    android:paddingBottom="8dp"
+		    android:textStyle="bold"
+		    android:text="@string/city"
+	        />
+	    <TextView android:id="@+id/tzHeader"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="match_parent"
+		    android:paddingLeft="4dp"
+		    android:paddingTop="8dp"
+		    android:paddingBottom="8dp"
+		    android:textStyle="bold"
+		    android:text="@string/tz"
+	        />
+	    
+    </LinearLayout>
+
+	<View
+		android:background="#FFFFFF"
+		android:layout_below="@+id/headers"
+		android:layout_width="match_parent"
+		android:layout_height="1dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@id/headers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+
+</RelativeLayout>

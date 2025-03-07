@@ -1,0 +1,109 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="BlueJay.InfoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <phone:Panorama Title="KXXX airport weather" x:Name="panObj">
+            <phone:Panorama.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/detailbg.jpg" Opacity="0.2"/>
+            </phone:Panorama.Background>
+            
+            <!-- Month/time selection -->
+            <phone:PanoramaItem>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="100" />
+                    </Grid.RowDefinitions>
+                    <ListBox Grid.Row="0" x:Name="listMonths" SelectionChanged="listMonths_SelectionChanged">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Width="400" Height="60" Background="{Binding Background}" Margin="10">
+                                    <TextBlock Text="{Binding Name}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+
+                    </ListBox>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Grid.Column="0" Fill="Gray" x:Name="mRect" Visibility="Collapsed" />
+                        <TextBlock Grid.Column="0" Text="M" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Tap="TextBlock_Tap" />
+                        <Rectangle Grid.Column="1" Fill="Gray" x:Name="nRect" Visibility="Collapsed" />
+                        <TextBlock Grid.Column="1" Text="N" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Tap="TextBlock_Tap" />
+                        <Rectangle Grid.Column="2" Fill="Gray" x:Name="aRect" Visibility="Collapsed" />
+                        <TextBlock Grid.Column="2" Text="A" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Tap="TextBlock_Tap" />
+                        <Rectangle Grid.Column="3" Fill="Gray" x:Name="eRect" Visibility="Collapsed" />
+                        <TextBlock Grid.Column="3" Text="E" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Tap="TextBlock_Tap" />
+                    </Grid>
+                </Grid>
+            </phone:PanoramaItem>
+
+            <!-- Winds -->
+            <phone:PanoramaItem Header="winds">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="windDetail" Text="" FontSize="24" Margin="10" VerticalAlignment="Center" />
+                    <Grid x:Name="windGraph" Width="400" Height="400" Margin="10" Tap="graph_Tap" />
+                </StackPanel>
+            </phone:PanoramaItem>
+
+            <!-- Visibility -->
+            <phone:PanoramaItem Header="visibility">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="visDetail" Text="" FontSize="24" Margin="10" VerticalAlignment="Center" />
+                    <Grid x:Name="visGraph" Width="400" Height="400" Margin="10" Tap="graph_Tap" />
+                </StackPanel>
+            </phone:PanoramaItem>
+
+            <!-- Clouds -->
+            <phone:PanoramaItem Header="clouds">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="cloudDetail" Text="" FontSize="24" Margin="10" VerticalAlignment="Center" />
+                    <Grid x:Name="cloudGraph" Width="400" Height="400" Margin="10" Tap="graph_Tap" />
+                </StackPanel>
+            </phone:PanoramaItem>
+
+            <!-- Temperature -->
+            <phone:PanoramaItem Header="temperature">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="tempDetail" Text="" FontSize="24" Margin="10" VerticalAlignment="Center" />
+                    <Grid x:Name="tempGraph" Width="400" Height="400" Margin="10" Tap="graph_Tap" />
+                </StackPanel>
+            </phone:PanoramaItem>
+
+            <!-- Dew point -->
+            <phone:PanoramaItem Header="dew point">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="dewDetail" Text="" FontSize="24" Margin="10" VerticalAlignment="Center" />
+                    <Grid x:Name="dewGraph" Width="400" Height="400" Margin="10" Tap="graph_Tap" />
+                </StackPanel>
+            </phone:PanoramaItem>
+
+            <!-- Altimeter -->
+            <phone:PanoramaItem Header="altimeter">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="altDetail" Text="" FontSize="24" Margin="10" VerticalAlignment="Center" />
+                    <Grid x:Name="altGraph" Width="400" Height="400" Margin="10" Tap="graph_Tap" />
+                </StackPanel>
+            </phone:PanoramaItem>
+        </phone:Panorama>
+    </Grid>
+
+</phone:PhoneApplicationPage>
